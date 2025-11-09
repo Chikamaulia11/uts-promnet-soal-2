@@ -1,0 +1,136 @@
+body {
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.navbar {
+  background-color: #b48686;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 {
+  color: white;
+  margin: 0;
+}
+
+.home {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #c1919169;
+}
+
+.produk {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.harga {
+  color: rgb(247, 98, 145);
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #c1919169;
+}
+.card {
+  width: 300px;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+  padding: 5px;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card h3 {
+  margin: 10px 0 15px;
+}
+.card button {
+  background-color: #d29090d2;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 60%;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.card button:hover {
+  background-color: #895e5e;
+}
+
+.keranjang {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #c1919169;
+}
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  border: 1px solid #a9a6a6;
+  padding: 10px;
+}
+th {
+  background-color: #ffbebe;
+}
+.total-belanja {
+  margin-top: 20px;
+}
+.total-belanja button {
+  background-color: #d29090d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.total-belanja button:hover {
+  background-color: #895e5e;
+}
+
+.footer {
+  background-color: #b48686;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 0;
+}
+
+.filter-btn {
+  margin: 20px 0;
+}
+
+.filter-btn button {
+  background-color: #fafafa;
+  border: 2px solid #be8383;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  color: rgb(84, 52, 52);
+  cursor: pointer;
+}
+
+.filter-btn button:hover {
+  background-color: #895e5e;
+}
