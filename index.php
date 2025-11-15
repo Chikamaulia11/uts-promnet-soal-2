@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Warung Jateng Bite</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <h1>Warung Jateng Bite</h1>
-  </nav>
-
-  <!-- HOME -->
-  <section id="home" class="home">
-    <h2>Selamat Datang di Warung Jawa Tengah Bite</h2>
-    <p>Menikmati gigitan lezat khas Jawa Tengah</p>
-    <div class="filter-btn">
-      <button onclick="filterProduk('semua')">Tampilkan Semua</button>
-      <button onclick="filterProduk('cemilan')">Makanan</button>
-      <button onclick="filterProduk('minuman')">Minuman</button>
-    </div>
-  </section>
-  
-    <div class="card-container" id="daftarProduk">
-      <?php
+<?php
       $produk = [
         [
           "nama" => "Jenang",
@@ -80,6 +50,40 @@
         ]
       ];
 
+      ?>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warung Jateng Bite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1>Warung Jateng Bite</h1>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="home">
+    <h2>Selamat Datang di Warung Jawa Tengah Bite</h2>
+    <p>Menikmati gigitan lezat khas Jawa Tengah</p>
+    <div class="filter-btn">
+      <button onclick="filterProduk('semua')">Tampilkan Semua</button>
+      <button onclick="filterProduk('cemilan')">Makanan</button>
+      <button onclick="filterProduk('minuman')">Minuman</button>
+    </div>
+  </section>
+  
+  
+    <div class="card-container" id="daftarProduk">
+      <?php
       foreach ($produk as $p) {
         echo "
         <div class='card' data-kategori='{$p['kategori']}'>
@@ -89,11 +93,10 @@
           <button onclick='tambahKeranjang(\"{$p['nama']}\", {$p['harga']})'>Tambah ke Keranjang</button>
         </div>
         ";
-      }
+        }
       ?>
     </div>
-  </section>
-
+    
 
   <!-- KERANJANG -->
   <section id="keranjang" class="keranjang">

@@ -41,8 +41,7 @@ function tampilKeranjang() {
     tabel.innerHTML += row;
   });
 
-  document.getElementById("totalBelanja").innerText =
-    totalBelanja.toLocaleString("id-ID");
+  document.getElementById("totalBelanja").innerText = totalBelanja.toLocaleString("id-ID");
 }
 
 function hapusItem(index) {
@@ -102,4 +101,3 @@ function filterProduk(kategori) {
     }
   });
 }
-
